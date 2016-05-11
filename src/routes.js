@@ -3,12 +3,20 @@ var requestHandler = require('./requestHandler');
 
 var appRouter = function(app) {
 
+  app.use (function (error, req, res, next){
+    res.setHeader('Content-Type', 'application/json');
+    res.send({
+      "error": "Could not decode request: JSON parsing failed"
+    });
+});
+
+
   app.post("/", function(req, res) {
       var response = requestHandler(req.body);
-      // console.log(response);
+
+
       res.setHeader('Content-Type', 'application/json');
-      res.write(JSON.stringify(response));
-      res.end();
+      res.send(response);
 
   });
 
