@@ -1,0 +1,24 @@
+{
+  "name": "mi9-codechallenge",
+  "version": "1.0.0",
+  "description": "mi9 Coding Challenge app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mayu885@bitbucket.org/mayu885/mi9-codechallenge.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "Mahesh Sangawar",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mayu885/mi9-codechallenge#readme"
+}
