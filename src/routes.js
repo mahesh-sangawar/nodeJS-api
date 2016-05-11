@@ -5,6 +5,7 @@ var appRouter = function(app) {
 
   app.use (function (error, req, res, next){
     res.setHeader('Content-Type', 'application/json');
+    res.statusCode = 400
     res.send({
       "error": "Could not decode request: JSON parsing failed"
     });
