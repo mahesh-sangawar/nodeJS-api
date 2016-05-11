@@ -7,7 +7,8 @@ var appRouter = function(app) {
       var response = requestHandler(req.body);
       // console.log(response);
       res.setHeader('Content-Type', 'application/json');
-      res.send(response);
+      res.write(JSON.stringify(response));
+      res.end();
 
   });
 
