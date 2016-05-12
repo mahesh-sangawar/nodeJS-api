@@ -4,12 +4,17 @@
   "description": "mi9 Coding Challenge app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --recursive ./src/*.js ./test/*.js",
     "start": "node index.js"
   },
   "dependencies": {
     "express": "4.13.3",
     "body-parser": "1.15.1"
+  },
+  "devDependencies": {
+    "mocha": "2.4.5",
+    "supertest": "1.2.0",
+    "expect.js": "0.3.1"
   },
   "repository": {
     "type": "git",
